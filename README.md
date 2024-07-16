@@ -4,6 +4,10 @@ This project is a simple example of how to use the [Raspberry Pi Pico WH](https:
 
 On boot the Pico will run `main.py` which will read the temperature from the [DS18X20](https://thepihut.com/products/waterproof-ds18b20-digital-temperature-sensor-extras?variant=27740417873&currency=GBP&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gad_source=1&gclid=CjwKCAjwtNi0BhA1EiwAWZaANBnhGe2AJmlLG1U24ey2xiXdPbHhvD46_rXT4ldNFK6NyepNgkVHZhoCweYQAvD_BwE) sensor and publish it to the MQTT broker every 60 seconds. The onboard LED initially activates once a WiFi connection has been established and then blinks every time data is published.
 
+## Configuration
+
+ The config file is not included in this repository. You will need to create a `config.py` file in the root directory with your WiFi and MQTT broker details.
+
 ## Hardware
 
 - Raspberry Pi Pico WH
